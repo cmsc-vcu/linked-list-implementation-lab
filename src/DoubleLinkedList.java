@@ -81,7 +81,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	// Returns a reference to the node at a given position.
 	// Precondition: The chain is not empty;
 	//               1 <= givenPosition <= numberOfEntries.	
-	protected DoubleLinkedNode getNodeAt(int givenPosition)	{
+	private DoubleLinkedNode getNodeAt(int givenPosition)	{
 		assert !isEmpty() && (1 <= givenPosition) && (givenPosition <= numElements);
 		DoubleLinkedNode currentNode = first;
 
@@ -96,23 +96,23 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	} 
 
 	
-	protected class DoubleLinkedNode{
+	private class DoubleLinkedNode{
 		private T data;  	 
 		private DoubleLinkedNode next;  	 // Link to next node
-		private DoubleLinkedNode previous; // Link to previous node
+		private DoubleLinkedNode previous;       // Link to previous node
 
 		private DoubleLinkedNode(T dataPortion){
 			data = dataPortion;
 			next = null;	
 			previous = null;	
 		}
-		private DoubleLinkedNode(DoubleLinkedNode previousNode, T dataPortion, DoubleLinkedNode nextNode){
+		private DoubleLinkedNode(T dataPortion, DoubleLinkedNode nextNode, DoubleLinkedNode previousNode){
 			data = dataPortion;
 			next = nextNode;	
 			previous = previousNode;
 		} 
 
-		protected T getData(){
+		private T getData(){
 			return data;
 		} 
 
@@ -120,7 +120,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 			data = newData;
 		} 
 
-		DoubleLinkedNode getNextNode(){
+		private DoubleLinkedNode getNextNode(){
 			return next;
 		} 
 
@@ -128,7 +128,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 			next = nextNode;
 		} 
 
-		DoubleLinkedNode getPreviousNode(){
+		private DoubleLinkedNode getPreviousNode(){
 			return previous;
 		}
 
