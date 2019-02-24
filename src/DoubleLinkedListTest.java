@@ -58,6 +58,14 @@ public class DoubleLinkedListTest {
 //		list.add("Barb");
 //		assertTrue(list.getLength()==1);
 //	}
+//	
+// 	@Test
+// 	// After adding into a position
+// 	public final void testAddGetLength() {
+// 		populateList();
+// 		list.add(4, "Jonathan");
+// 		assertEquals(6, list.getLength());
+// 	}
 	
 // ********* Third group of tests - more add method *********
 //	@Test
