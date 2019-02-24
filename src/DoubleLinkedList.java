@@ -21,7 +21,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public T remove (int givenPosition) {
-		
+		return null;
 		}
 
 	@Override
@@ -31,7 +31,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public T replace (int givenPosition, T newEntry) {
-		
+		return null;
 	}
 
 	@Override
@@ -46,21 +46,22 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public T[] toArray() {
-		
+		return null;
 	}
 
 	@Override
 	public boolean contains (T anEntry) {
-
+		return false;
 	}
 
 	@Override
 	public int getLength() {
+		return -1;
 	}
 
 	@Override
 	public boolean isEmpty() {
-
+		return true;
 	}
 
 	// Initializes the class's data fields to indicate an empty list.
@@ -70,18 +71,18 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 		numElements = 0;
 	} 
 
-	protected DoubleLinkedNode getFirst() {
+	public DoubleLinkedNode getFirst() {
 		return first;
 	}
 
-	protected DoubleLinkedNode getLast() {
+	public DoubleLinkedNode getLast() {
 		return last;
 	}
 
 	// Returns a reference to the node at a given position.
 	// Precondition: The chain is not empty;
 	//               1 <= givenPosition <= numberOfEntries.	
-	private DoubleLinkedNode getNodeAt(int givenPosition)	{
+	 DoubleLinkedNode getNodeAt(int givenPosition)	{
 		assert !isEmpty() && (1 <= givenPosition) && (givenPosition <= numElements);
 		DoubleLinkedNode currentNode = first;
 
@@ -96,7 +97,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	} 
 
 	
-	private class DoubleLinkedNode{
+	 class DoubleLinkedNode{
 		private T data;  	 
 		private DoubleLinkedNode next;  	 // Link to next node
 		private DoubleLinkedNode previous;       // Link to previous node
@@ -112,7 +113,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 			previous = previousNode;
 		} 
 
-		private T getData(){
+		 T getData(){
 			return data;
 		} 
 
@@ -120,7 +121,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 			data = newData;
 		} 
 
-		private DoubleLinkedNode getNextNode(){
+		 DoubleLinkedNode getNextNode(){
 			return next;
 		} 
 
@@ -128,7 +129,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 			next = nextNode;
 		} 
 
-		private DoubleLinkedNode getPreviousNode(){
+		 DoubleLinkedNode getPreviousNode(){
 			return previous;
 		}
 

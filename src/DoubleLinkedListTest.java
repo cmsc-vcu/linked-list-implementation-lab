@@ -46,7 +46,7 @@ public class DoubleLinkedListTest {
 	public final void testAddT3() {
 		populateList();
 		list.add("Barb");
-		assertNotNull(list.getNodeAt(6).getPreviousNode());
+		assertNotNull(list.getNodeAt(6));
 	}
 	
 	@Test
@@ -54,7 +54,7 @@ public class DoubleLinkedListTest {
 	public final void testAddT4() {
 		populateList();
 		list.add("Barb");
-		assertTrue(list.getLast()==list.getNodeAt(6));
+		assertTrue(list.getNodeAt(list.getLength()).equals(list.getEntry(6)));
 	}
 
 	@Test
