@@ -45,7 +45,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	*/
 	@Override
 	public T remove (int givenPosition) {
-		
+		return null;
 	}
 
 	/** Removes all entries from this list. 
@@ -66,7 +66,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
      	*/
 	@Override
 	public T replace (int givenPosition, T newEntry) {
-		
+		return null;
 	}
 
 	/** Retrieves the entry at a given position in this list.
@@ -93,7 +93,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	*/
 	@Override
 	public T[] toArray() {
-		
+		return null;
 	}
 
 	/** Sees whether this list contains a given entry.
@@ -102,7 +102,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	*/
 	@Override
 	public boolean contains (T anEntry) {
-
+		return false;
 	}
 
 	/** Gets the length of this list.
@@ -110,6 +110,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	 */
 	@Override
 	public int getLength() {
+		return -1;
 	}
 
 	/** Sees whether this list is empty.
@@ -117,7 +118,7 @@ public class DoubleLinkedList<T> implements ListInterface<T> {
 	*/
 	@Override
 	public boolean isEmpty() {
-
+		return false;
 	}
 
 	// Initializes the class's data fields to indicate an empty list.
