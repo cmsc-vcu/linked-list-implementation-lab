@@ -19,6 +19,7 @@ public class DoubleLinkedListTest {
 		list.add("Eleven");
 	}
 	
+<<<<<<< HEAD
 	@Test
 	// test that clear sets the number of elements in the list to 0
 	public final void testClear1() {
@@ -374,5 +375,4 @@ public class DoubleLinkedListTest {
 //		list.clear();
 //		assertTrue(list.isEmpty());
 //	}
-
 }
