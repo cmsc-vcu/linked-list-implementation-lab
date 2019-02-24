@@ -89,7 +89,7 @@ public class DoubleLinkedListTest {
 //	// Add to first position of an empty list
 //	public final void testAddIntT1a() {
 //		list.add(1, "Barb");
-//		assertTrue(list.contains("Barb"));
+//		assertTrue(list.getFirst().getData().equals("Barb"));
 //	}
 //	
 //	@Test
