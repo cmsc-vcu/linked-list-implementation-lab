@@ -240,7 +240,7 @@ public class DoubleLinkedListTest {
 //	}
 //
 
-	// ********* Sixth group of tests - getEntry method *********	
+	// ********* Seventh group of tests - getEntry method *********	
 //	@Test
 //	// Position is close to front
 //	public final void testGetEntry1() {
@@ -270,7 +270,7 @@ public class DoubleLinkedListTest {
 //	}
 //
 	
-	// ********* Sixth group of tests - toArray method *********
+	// ********* Eighth group of tests - toArray method *********
 //	@Test
 //	// Empty list
 //	public final void testToArray1() {
@@ -286,7 +286,7 @@ public class DoubleLinkedListTest {
 //		assertArrayEquals(names, list.toArray());
 //	}
 
-	// ********* Seventh group of tests - contains method *********
+	// ********* Ninth group of tests - contains method *********
 //	@Test
 //	// Empty list
 //	public final void testContains1() {
@@ -310,71 +310,5 @@ public class DoubleLinkedListTest {
 //	public final void testContains4() {
 //		populateList();
 //		assertFalse(list.contains("Barb"));
-//	}
-
-// ********* Eighth group of tests - getLength method  after adds*********	
-//	@Test
-//	// Empty list
-//	public final void testGetLength1() {
-//		assertEquals(0, list.getLength());
-//	}
-//	
-//	@Test
-//	// After adding one node
-//	public final void testGetLength2() {
-//		list.add("Barb");
-//		assertEquals(1, list.getLength());
-//	}
-//	
-//	@Test
-//	// After adding several nodes
-//	public final void testGetLength3() {
-//		populateList();
-//		assertEquals(5, list.getLength());
-//	}
-//	
-//	@Test
-//	// After adding into a position
-//	public final void testGetLength4() {
-//		populateList();
-//		list.add(4, "Jonathan");
-//		assertEquals(6, list.getLength());
-//	}
-
-// ********* Ninth group of tests - isEmpty method *********	
-//	@Test
-//	// Test before add anything
-//	public final void testIsEmpty1() {
-//		assertTrue(list.isEmpty());
-//	}
-//	
-//	@Test
-//	// Test after adding one node to empty list
-//	public final void testIsEmpty2() {
-//		list.add("Barb");
-//		assertFalse(list.isEmpty());
-//	}
-//	
-//	@Test
-//	// Test after adding nodes to list
-//	public final void testIsEmpty3() {
-//		populateList();
-//		assertFalse(list.isEmpty());
-//	}
-//	
-//	@Test
-//	// Test after deleting a only one
-//	public final void testIsEmpty4() {
-//		list.add("Barb");
-//		list.remove(1);
-//		assertTrue(list.isEmpty());
-//	}
-//	
-//	@Test
-//	// Test after a call to clear
-//	public final void testIsEmpty5() {
-//		populateList();
-//		list.clear();
-//		assertTrue(list.isEmpty());
 //	}
 }
