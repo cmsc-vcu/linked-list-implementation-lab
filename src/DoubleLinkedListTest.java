@@ -19,7 +19,6 @@ public class DoubleLinkedListTest {
 		list.add("Eleven");
 	}
 	
-<<<<<<< HEAD
 	@Test
 	// test that clear sets the number of elements in the list to 0
 	public final void testClear1() {
@@ -286,7 +285,8 @@ public class DoubleLinkedListTest {
 //		String[] names = {"Will", "Dustin", "Lucas", "Mike", "Eleven"};
 //		assertArrayEquals(names, list.toArray());
 //	}
-//
+
+	// ********* Seventh group of tests - contains method *********
 //	@Test
 //	// Empty list
 //	public final void testContains1() {
@@ -311,7 +311,8 @@ public class DoubleLinkedListTest {
 //		populateList();
 //		assertFalse(list.contains("Barb"));
 //	}
-//
+
+// ********* Eighth group of tests - getLength method  after adds*********	
 //	@Test
 //	// Empty list
 //	public final void testGetLength1() {
@@ -339,7 +340,8 @@ public class DoubleLinkedListTest {
 //		list.add(4, "Jonathan");
 //		assertEquals(6, list.getLength());
 //	}
-//
+
+// ********* Ninth group of tests - isEmpty method *********	
 //	@Test
 //	// Test before add anything
 //	public final void testIsEmpty1() {
