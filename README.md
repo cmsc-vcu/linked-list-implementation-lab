@@ -13,13 +13,13 @@
  - Implement isEmpty() so that it returns true if first and last are null and numElements is 0
  - Run the DoubleLinkedListTest.java class and see that a green bar is displayed in the JUnit window
 
-  - For the second group of tests, un-comment lines 41 through 60 in the DoubleLinkedList class
+  - For the second group of tests, un-comment lines 41 through 68 in the DoubleLinkedList class
   - These tests check if adding a node to an empty list is implemented correctly
   - Save and execute the DoubleLinkedListTest class (they fail because the code hasn't been written yet.
   - Implement the code to add a node to an empty list and rerun the tests they should now pass. (If not, check your implementation.)
   
   - The next batch of tests for the add method handles the case where there are already nodes in the list.
-  - Uncomment lines 63 through 85, execute the test (once again, they fail at first)
+  - Uncomment lines 70 through 93, execute the test (once again, they fail at first)
   - Implement the code and rerun the tests until your get the green bar.
   
   Continue the same process of incremental development by un-commenting sections of the test class, running the failing tests, and implementing the method that is being tested until you get a green bar. 
